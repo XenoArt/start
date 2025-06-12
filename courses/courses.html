@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კურსები - EduGuide საქართველო</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Georgian:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/courses/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <h1 class="logo-text">EduGuide<span>საქართველო</span></h1>
+                </div>
+                <div class="header-actions">
+                    <a href="/index.html" class="courses-btn">
+                        <i class="fas fa-home"></i>
+                        მთავარი
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <div class="toggle-thumb"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <section class="courses-section animate__animated animate__fadeIn">
+                <h1 class="courses-title">პროფესიული კურსები</h1>
+                <p class="courses-subtitle">აირჩიეთ კურსი თქვენი კარიერული განვითარებისთვის</p>
+                
+                <!-- Search and Filter -->
+                <div class="courses-filter">
+                    <div class="search-container">
+                        <input type="text" id="courseSearch" class="search-input" placeholder="ძიება კურსებში...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">ყველა კატეგორია</option>
+                        <option value="მონაცემთა ანალიზი">მონაცემთა ანალიზი</option>
+                        <option value="ვებ დეველოპმენტი">ვებ დეველოპმენტი</option>
+                        <option value="მარკეტინგი">მარკეტინგი</option>
+                        <option value="პროექტის მენეჯმენტი">პროექტის მენეჯმენტი</option>
+                        <option value="დიზაინი">დიზაინი</option>
+                        <option value="AI">ხელოვნური ინტელექტი</option>
+                        <option value="კიბერუსაფრთხოება">კიბერუსაფრთხოება</option>
+                        <option value="ფინანსები">ფინანსები</option>
+                    </select>
+                </div>
+
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- Course 1 -->
+                    <div class="course-card" data-category="მონაცემთა ანალიზი">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">მონაცემთა ანალიზი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Python for Data Science</h3>
+                            <p class="course-description">ისწავლეთ მონაცემთა ანალიზი Python-ის გამოყენებით პრაქტიკული პროექტების მეშვეობით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 8 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> დამწყებთათვის</span>
+                            </div>
+                            <div class="course-price">450 ლარი</div>
+                            <button class="enroll-btn" data-course="Python for Data Science" data-price="450">რეგისტრაცია</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Course 2 -->
+                    <div class="course-card" data-category="ვებ დეველოპმენტი">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">ვებ დეველოპმენტი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Full Stack Development</h3>
+                            <p class="course-description">დაეუფლეთ ვებ დეველო�პმენტს HTML, CSS, JavaScript და Node.js-ის გამოყენებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 12 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> საშუალო დონე</span>
+                            </div>
+                            <div class="course-price">600 ლარი</div>
+                            <button class="enroll-btn" data-course="Full Stack Development" data-price="600">რეგისტრაცია</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Course 3 -->
+                    <div class="course-card" data-category="მარკეტინგი">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">მარკეტინგი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Digital Marketing</h3>
+                            <p class="course-description">ისწავლეთ დიჯიტალური მარკეტინგის სტრატეგიები, SEO, სოციალური მედია და კონტენტ მარკეტინგი.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 6 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> დამწყებთათვის</span>
+                            </div>
+                            <div class="course-price">400 ლარი</div>
+                            <button class="enroll-btn" data-course="Digital Marketing" data-price="400">რეგისტრაცია</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Course 4 -->
+                    <div class="course-card" data-category="პროექტის მენეჯმენტი">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/3184610/pexels-photo-3184610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">პროექტის მენეჯმენტი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Project Management</h3>
+                            <p class="course-description">დაეუფლეთ პროექტების მართვის ძირითად პრინციპებს Agile და Scrum მეთოდოლოგიების გამოყენებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 10 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> საშუალო დონე</span>
+                            </div>
+                            <div class="course-price">550 ლარი</div>
+                            <button class="enroll-btn" data-course="Project Management" data-price="550">რეგისტრაცია</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="course-card" data-category="დიზაინი">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">დიზაინი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>UI/UX Design Fundamentals</h3>
+                            <p class="course-description">ისწავლეთ მომხმარებლის ინტერფეისისა და გამოცდილების დიზაინი Figma-სა და Adobe XD-ის გამოყენებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 8 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> დამწყებთათვის</span>
+                            </div>
+                            <div class="course-price">480 ლარი</div>
+                            <button class="enroll-btn" data-course="UI/UX Design Fundamentals" data-price="480">რეგისტრაცია</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="course-card" data-category="AI">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">ხელოვნური ინტელექტი</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Introduction to Machine Learning</h3>
+                            <p class="course-description">აღმოაჩინეთ მანქანური სწავლების საფუძვლები TensorFlow-სა და scikit-learn-ის გამოყენებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 10 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> საშუალო დონე</span>
+                            </div>
+                            <div class="course-price">650 ლარი</div>
+                            <button class="enroll-btn" data-course="Introduction to Machine Learning" data-price="650">რეგისტრაცია</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 7 -->
+                    <div class="course-card" data-category="კიბერუსაფრთხოება">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">კიბერუსაფრთხოება</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Cybersecurity Essentials</h3>
+                            <p class="course-description">ისწავლეთ ქსელის უსაფრთხოება, ეთიკური ჰაკინგი და მონაცემთა დაცვა პრაქტიკული სავარჯიშოებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 9 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> დამწყებთათვის</span>
+                            </div>
+                            <div class="course-price">520 ლარი</div>
+                            <button class="enroll-btn" data-course="Cybersecurity Essentials" data-price="520">რეგისტრაცია</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 8 -->
+                    <div class="course-card" data-category="ფინანსები">
+                        <div class="course-image" style="background-image: url('https://images.pexels.com/photos/4386158/pexels-photo-4386158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <span class="course-category">ფინანსები</span>
+                        </div>
+                        <div class="course-content">
+                            <h3>Financial Analysis Basics</h3>
+                            <p class="course-description">დაეუფლეთ ფინანსური ანალიზის საფუძვლებს Excel-ისა და ფინანსური მოდელირების გამოყენებით.</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 7 კვირა</span>
+                                <span><i class="fas fa-user-graduate"></i> დამწყებთათვის</span>
+                            </div>
+                            <div class="course-price">430 ლარი</div>
+                            <button class="enroll-btn" data-course="Financial Analysis Basics" data-price="430">რეგისტრაცია</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2023 EduGuide საქართველო</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/courses/main.js"></script>
+</body>
+</html>

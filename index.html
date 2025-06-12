@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuide საქართველო - კარიერული მრჩეველი</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Georgian:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+      <header class="app-header">
+    <div class="header-content">
+        <div class="logo-container">
+            <i class="fas fa-graduation-cap logo-icon"></i>
+            <h1 class="logo-text">EduGuide<span>საქართველო</span></h1>
+        </div>
+        <div class="header-actions">
+            <a href="/courses/courses.html" class="courses-btn">
+                <i class="fas fa-shopping-cart"></i>
+                კურსები
+            </a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <div class="toggle-thumb"></div>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Hero Section -->
+            <section class="hero animate__animated animate__fadeIn">
+                <h1 class="hero-title">იპოვე შენი იდეალური კარიერა</h1>
+                <p class="hero-subtitle">ჩვენი ინტელექტუალური სისტემა დაგეხმარება აირჩიო შენთვის საუკეთესო პროფესია და უნივერსიტეტი</p>
+                <button class="start-btn animate__animated animate__pulse animate__infinite" id="startBtn">დაიწყე ტესტი</button>
+            </section>
+
+            <!-- Questionnaire Section -->
+            <section id="questionnaire" class="questionnaire-section">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0/17</div>
+                </div>
+                <div id="questionsContainer" class="questions-container"></div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results" class="results-section">
+                <div class="results-header">
+                    <div class="results-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2 class="results-title">თქვენი პერსონალური რეკომენდაციები</h2>
+                    <p class="results-subtitle">შედეგები დაფუძნებულია თქვენს პასუხებზე</p>
+                </div>
+                <div id="resultsContent" class="results-content"></div>
+            </section>
+
+            <!-- Chat Container -->
+            <div id="chatContainer" class="chat-container">
+                <div class="chat-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>EduGuide Assistant</h3>
+                </div>
+                <div id="chatMessages" class="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-content">გამარჯობა! როგორ შემიძლია დაგეხმაროთ? შემიძლია გიპასუხოთ შემდეგ თემებზე: სტიპენდიები, საფასური, მისაღები გამოცდები, დასაქმების შესაძლებლობები, პროფესიების არჩევანი.</div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" class="chat-input" placeholder="დაწერეთ თქვენი შეკითხვა..." onkeypress="handleKeyPress(event)">
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2023 EduGuide საქართველო</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

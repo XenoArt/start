@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გადახდა - EduGuide საქართველო</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Georgian:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/payment/payment.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <h1 class="logo-text">EduGuide<span>საქართველო</span></h1>
+                </div>
+                <div class="header-actions">
+                    <a href="/courses/courses.html" class="courses-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        კურსებზე დაბრუნება
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <div class="toggle-thumb"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <section class="payment-section animate__animated animate__fadeIn">
+                <h1 class="payment-title">გადახდის გვერდი</h1>
+                <p class="payment-subtitle">შეავსეთ გადახდის დეტალები თქვენი კურსისთვის</p>
+                
+                <div class="payment-card">
+                    <div class="payment-info">
+                        <h3 id="courseTitle">კურსის დასახელება</h3>
+                        <p class="payment-price" id="coursePrice">0 ლარი</p>
+                    </div>
+                    <div class="payment-form">
+                        <div class="form-group">
+                            <label for="cardholderName">ბარათის მფლობელის სახელი</label>
+                            <input type="text" id="cardholderName" class="form-input" placeholder="სახელი გვარი" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">ბარათის ნომერი</label>
+                            <input type="text" id="cardNumber" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="expiryDate">ვადის გასვლის თარიღი</label>
+                                <input type="text" id="expiryDate" class="form-input" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" class="form-input" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+                        <button class="submit-payment-btn">გადახდის განხორციელება</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2023 EduGuide საქართველო</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/payment/payment.js"></script>
+</body>
+</html>
