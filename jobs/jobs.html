@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სამუშაო შესაძლებლობები - EduGuide საქართველო</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Georgian:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/jobs/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <h1 class="logo-text">EduGuide<span>საქართველო</span></h1>
+                </div>
+                <div class="header-actions">
+                    <a href="/courses/courses.html" class="courses-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        კურსები
+                    </a>
+                    <a href="/jobs/jobs.html" class="courses-btn jobs-btn">
+                        <i class="fas fa-briefcase"></i>
+                        სამუშაო
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <div class="toggle-thumb"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Jobs Hero Section -->
+            <section class="hero animate__animated animate__fadeIn">
+                <h1 class="hero-title">სამუშაო შესაძლებლობები ქართულ უნივერსიტეტებში</h1>
+                <p class="hero-subtitle">იპოვეთ თქვენი ოცნების სამუშაო საქართველოს წამყვან უნივერსიტეტებში</p>
+            </section>
+
+            <!-- Jobs Section -->
+            <section class="jobs-section">
+                <div class="jobs-list" id="jobsList">
+                    <!-- Job 1 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>აკადემიური მრჩეველი</h3>
+                            <span class="job-badge">სრული განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>თბილისის სახელმწიფო უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 2000-2500 GEL</span>
+                            </div>
+                            <p class="job-description">აკადემიური მრჩეველი სტუდენტებისთვის ხელმძღვანელობისა და მხარდაჭერის უზრუნველსაყოფად.</p>
+                            <button class="apply-btn" onclick="applyForJob('აკადემიური მრჩეველი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>ლექტორი - კომპიუტერული მეცნიერებები</h3>
+                            <span class="job-badge">ნახევარი განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>ილიას სახელმწიფო უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 1500-2000 GEL</span>
+                            </div>
+                            <p class="job-description">ლექტორი კომპიუტერული მეცნიერებების კურსების სწავლებისთვის.</p>
+                            <button class="apply-btn" onclick="applyForJob('ლექტორი - კომპიუტერული მეცნიერებები')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 3 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>კვლევის კოორდინატორი</h3>
+                            <span class="job-badge">სრული განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>საქართველოს ტექნიკური უ�ნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 2200-2700 GEL</span>
+                            </div>
+                            <p class="job-description">კვლევის პროექტების მართვა და კოორდინაცია ინჟინერიის ფაკულტეტზე.</p>
+                            <button class="apply-btn" onclick="applyForJob('კვლევის კოორდინატორი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 4 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>ბიბლიოთეკის მენეჯერი</h3>
+                            <span class="job-badge">სრული განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>თბილისის თავისუფალი უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 1800-2300 GEL</span>
+                            </div>
+                            <p class="job-description">უნივერსიტეტის ბიბლიოთეკის რესურსებისა და სერვისების მართვა.</p>
+                            <button class="apply-btn" onclick="applyForJob('ბიბლიოთეკის მენეჯერი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 5 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>მარკეტინგის სპეციალისტი</h3>
+                            <span class="job-badge">ნახევარი განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>კავკასიის უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 1200-1600 GEL</span>
+                            </div>
+                            <p class="job-description">უნივერსიტეტის პროგრამების პოპულარიზაცია და მარკეტინგული კამპანიების მართვა.</p>
+                            <button class="apply-btn" onclick="applyForJob('მარკეტინგის სპეციალისტი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 6 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>ადმინისტრაციული ასისტენტი</h3>
+                            <span class="job-badge">სრული განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>ბათუმი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 1600-2000 GEL</span>
+                            </div>
+                            <p class="job-description">ადმინისტრაციული მხარდაჭერა უნივერსიტეტის ოფისისთვის.</p>
+                            <button class="apply-btn" onclick="applyForJob('ადმინისტრაციული ასისტენტი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 7 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>ფინანსური ანალიტიკოსი</h3>
+                            <span class="job-badge">სრული განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>საქართველოს ეროვნული უნივერსიტეტი SEU</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>თბილისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 2000-2600 GEL</span>
+                            </div>
+                            <p class="job-description">ფინანსური ანგარიშების მომზადება და ბიუჯეტის ანალიზი.</p>
+                            <button class="apply-btn" onclick="applyForJob('ფინანსური ანალიტიკოსი')">განაცხადის შეტანა</button>
+                        </div>
+                    </div>
+                    <!-- Job 8 -->
+                    <div class="job-card animate__animated animate__fadeInUp">
+                        <div class="job-header">
+                            <h3>სტუდენტთა მხარდაჭერის სპეციალისტი</h3>
+                            <span class="job-badge">ნახევარი განაკვეთი</span>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-info">
+                                <i class="fas fa-university"></i>
+                                <span>ქუთაისის საერთაშორისო უნივერსიტეტი</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>ქუთაისი, საქართველო</span>
+                            </div>
+                            <div class="job-info">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>ხელფასი: 1400-1800 GEL</span>
+                            </div>
+                            <p class="job-description">სტუდენტებისთვის აკადემიური და სოციალური მხარდაჭერის უზრუნველყოფა.</p>
+                            <button class="apply-btn" onclick="applyForJob('სტუდენტთა მხარდაჭერის სპეციალისტი')">განაცხადის შეჟანა</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Application Modal -->
+            <div id="applicationModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closeModal()">×</span>
+                    <h3>განაცხადი: <span id="modalJobTitle"></span></h3>
+                    <form id="applicationForm">
+                        <label for="fullName">სრული სახელი</label>
+                        <input type="text" id="fullName" class="answer-input" required>
+                        <label for="email">ელ.ფოსტა</label>
+                        <input type="email" id="email" class="answer-input" required>
+                        <label for="resume">რეზიუმე</label>
+                        <textarea id="resume" class="answer-input" required></textarea>
+                        <button type="submit" class="apply-btn">გაგზავნა</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2023 EduGuide საქართველო</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+</html>
