@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuide საქართველო - პროფილი</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Georgian:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/profile/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <h1 class="logo-text">EduGuide<span>საქართველო</span></h1>
+                </div>
+                <div class="header-actions">
+                    <a href="/index.html" class="courses-btn">
+                        <i class="fas fa-home"></i>
+                        მთავარი
+                    </a>
+                    <a href="/courses/courses.html" class="courses-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        კურსები
+                    </a>
+                    <a href="/jobs/jobs.html" class="courses-btn jobs-btn">
+                        <i class="fas fa-briefcase"></i>
+                        სამუშაო
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <div class="toggle-thumb"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <section class="profile-hero animate__animated animate__fadeIn">
+                <div class="profile-header">
+                    <div class="profile-avatar">N</div>
+                    <div class="profile-info">
+                        <h2 id="userName">ნინო გიორგაძე</h2>
+                        <p id="userDetails">სტუდენტი | თბილისის სახელმწიფო უნივერსიტეტი</p>
+                        <p id="userInterests">ინტერესები: IT, Data Science, Design</p>
+                        <button class="edit-profile-btn">პროფილის რედაქტირება</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-content">
+                <div class="test-results-section animate__animated animate__fadeInUp">
+                    <h3><i class="fas fa-star"></i> თქვენი ტესტის შედეგები</h3>
+                    <p class="section-subtitle">ქვემოთ მოცემულია თქვენი პასუხების საფუძველზე შექმნილი რეკომენდაციები</p>
+                    <div class="test-results-actions">
+                        <button id="retakeTestBtn" class="retake-btn">
+                            <i class="fas fa-redo"></i> ხელახლა გაიარეთ ტესტი
+                        </button>
+                        <button id="showResultsBtn" class="toggle-btn">
+                            <i class="fas fa-chart-bar"></i> შედეგების ნახვა
+                        </button>
+                        <button id="showQuestionsBtn" class="toggle-btn">
+                            <i class="fas fa-question-circle"></i> კითხვები და პასუხები
+                        </button>
+                    </div>
+                    <div id="testResults" class="test-results-content hidden">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>შედეგების ჩატვირთვა...</p>
+                        </div>
+                    </div>
+                    <div id="testQuestions" class="test-questions-content hidden">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>პასუხების ჩატვირთვა...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-card animate__animated animate__fadeInUp">
+                        <h3><i class="fas fa-chart-pie"></i> პროგრესი</h3>
+                        <div class="progress-circle">
+                            <svg width="100" height="100">
+                                <circle cx="50" cy="50" r="45" />
+                                <circle class="progress" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="70" />
+                            </svg>
+                            <span>75%</span>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem;">ტესტის დასრულება</p>
+                    </div>
+
+                    <div class="dashboard-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <h3><i class="fas fa-bookmark"></i> შენახული რეკომენდაციები</h3>
+                        <div class="saved-recommendations">
+                            <ul id="savedRecommendations">
+                                <li><span>პროგრამული უზრუნველყოფის ინჟინერია</span><button class="view-btn">ნახვა</button></li>
+                                <li><span>მონაცემთა ანალიტიკა</span><button class="view-btn">ნახვა</button></li>
+                                <li><span>UI/UX დიზაინი</span><button class="view-btn">ნახვა</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer animate__animated animate__fadeInUp">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2025 EduGuide საქართველო. ყველა უფლება დაცულია.</p>
+                    <p class="footer-slogan">განათლება შენი მომავლისთვის!</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/profile/main.js"></script>
+</body>
+</html>
